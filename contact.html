@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Location | Sri Raghavendra Iyengar Bakery</title>
+<meta name="description" content="Visit or contact Sri Raghavendra Iyengar Bakery in Poonthottam, Agarathirumalam, Tamil Nadu. Call, WhatsApp, or get directions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Sri Raghavendra Iyengar Bakery</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cakes.html">Cakes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a class="wa" href="https://wa.me/919787260856" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="call" href="tel:+919787260856">Call</a>
+    </div>
+  </div>
+</nav>
+
+<header class="pagehero">
+  <div class="wrap">
+    <div class="eyebrow-inv">Get In Touch</div>
+    <h1>Contact &amp; Location</h1>
+    <p>Call, message, or drop by — whichever's easiest for you.</p>
+  </div>
+</header>
+
+<section class="section-paper">
+  <div class="wrap">
+    <div class="loc-grid">
+      <div class="loc-card">
+        <h3>Address</h3>
+        <address>Sri Raghavendra Iyengar Bakery<br>WMM2+35C, Poonthottam,<br>Agarathirumalam, Tamil Nadu 609503</address>
+
+        <h3>Hours</h3>
+        <p>Open daily until 10:00 PM<br><span style="font-size:12.5px;opacity:0.8;">(please call ahead on festival days)</span></p>
+
+        <h3>Phone &amp; WhatsApp</h3>
+        <p>+91 97872 60856</p>
+
+        <h3>Rating</h3>
+        <p>★★★★☆ 3.9 out of 5 (22 Google reviews)</p>
+
+        <div class="contact-btns">
+          <a class="btn btn-whatsapp" href="https://wa.me/919787260856" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="btn btn-maroon" href="tel:+919787260856">Call Now</a>
+          <a class="btn btn-outline" style="border-color:var(--maroon);color:var(--maroon-dark);" href="https://www.google.com/maps/search/?api=1&query=Raghavendra+Iyengar+Bakery+Poonthottam+Tamil+Nadu" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="mapframe">
+        <iframe
+          src="https://www.google.com/maps?q=Raghavendra+Iyengar+Bakery+Poonthottam+Tamil+Nadu&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing Sri Raghavendra Iyengar Bakery location"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="wrap">
+    <div class="eyebrow">General Enquiry</div>
+    <h2 class="sec-title" style="text-align:center;">Have a question?</h2>
+    <p class="sec-sub" style="margin:0 auto;text-align:center;">For cake orders, use our <a href="cakes.html" style="color:var(--maroon-dark);font-weight:700;">Cakes page</a>. For anything else, send us a message directly.</p>
+
+    <form class="enquiry-card" id="contactForm">
+      <div class="form-row">
+        <label for="cname">Your Name</label>
+        <input type="text" id="cname" required placeholder="e.g. Priya">
+      </div>
+      <div class="form-row">
+        <label for="cphone">Phone Number</label>
+        <input type="tel" id="cphone" required placeholder="e.g. 98765 43210">
+      </div>
+      <div class="form-row">
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" placeholder="How can we help?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-whatsapp" style="width:100%;justify-content:center;border:none;cursor:pointer;">Send on WhatsApp</button>
+      <p class="form-note">This opens WhatsApp with your message ready to send — you'll still need to hit send there. No details are stored on this website.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand-mini">Sri Raghavendra Iyengar Bakery</div>
+    <div>Poonthottam, Agarathirumalam, Tamil Nadu 609503 · Bakery and Cake Shop</div>
+    <div class="foot-links">
+      <a href="menu.html">Menu</a>
+      <a href="cakes.html">Cakes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://wa.me/919787260856" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('cname').value.trim();
+    var phone = document.getElementById('cphone').value.trim();
+    var message = document.getElementById('cmessage').value.trim();
+
+    var msg = "Hi, I have a question.\n" +
+      "Name: " + name + "\n" +
+      "Phone: " + phone + "\n" +
+      (message ? ("Message: " + message) : "");
+
+    var url = "https://wa.me/919787260856?text=" + encodeURIComponent(msg);
+    window.open(url, '_blank');
+  });
+</script>
+
+</body>
+</html>
